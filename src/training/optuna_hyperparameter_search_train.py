@@ -59,8 +59,9 @@ def main(args):
         learning_rate=1e-5,  # config
         num_train_epochs=2,  # config
         weight_decay=0.1,  # config
-        evaluation_strategy="epoch",
-        evaluation_strategy="steps", eval_steps=500
+        evaluation_strategy="no",
+        #evaluation_strategy="epoch",
+        #evaluation_strategy="steps", eval_steps=500
         warmup_steps=0,
         do_train=True,
         do_eval=True,
