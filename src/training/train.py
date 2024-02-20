@@ -61,7 +61,7 @@ def main(args):
         learning_rate=float(args.learning_rate),
         save_steps=args.save_steps,
         fp16=args.fp16,
-        load_best_model_at_end=True,
+        load_best_model_at_end=False,
         metric_for_best_model="f1",
     )
 
