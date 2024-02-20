@@ -62,6 +62,7 @@ def main(args):
         save_steps=args.save_steps,
         fp16=args.fp16,
         load_best_model_at_end=True,
+        evaluation_strategy="epoch",
         metric_for_best_model="f1",
     )
 
