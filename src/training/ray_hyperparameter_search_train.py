@@ -55,7 +55,7 @@ def main(args):
         per_device_eval_batch_size=args.per_device_eval_batch_size,
         logging_dir=f"{args.output_dir}/logs",
         fp16=args.fp16,
-        load_best_model_at_end=True,
+        load_best_model_at_end=False,
         metric_for_best_model="f1",
         save_strategy="no",
         # ray parameter
